@@ -5,31 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="header">
-        <h1>Flexbox Finesse</h1>
-        <div class="navbar__items">
-            <ul>
-                <li>
-                    <a href="#">Homepage</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#">Get involved</a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">ZachBach</a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item has-submenu">
+                <a tabindex="0">Services & Products</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Development</a></li>
+                    <li class="subitem"><a href="#">Dynamic Technology Solutions</a></li>
+                    <li class="subitem"><a href="#">Ark</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Investors</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Contact</a></li>
+                    <li class="subitem"><a href="#">Customer Service</a></li>
+                    <li class="subitem"><a href="#">Learn More</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="#">Github</a></li>
+            <li class="item"><a href="#">Contact</a>
+            </li>
+            <li class="item button"><a href="#">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
 
     <div class="hero__banner"></div>
 
