@@ -18,9 +18,10 @@ html {
   }
   
   @media only screen and (min-width: 500px) {
-    .grid__wrapper {
-      grid-template-columns: 1fr 1fr;
-    }  
+     
+  .grid__item1 {
+    grid-column: 1/ span 2;
+  }
   }
   
   @media only screen and (min-width: 850px) {
@@ -51,6 +52,16 @@ html {
   
   .grid__card article {
     padding: 20px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .grid__card p {
+      flex: 1;
+      line-height: 1.4;
   }
   
   .grid__card .thumbnail__img {
