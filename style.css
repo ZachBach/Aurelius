@@ -321,6 +321,10 @@ video#bgvideo {
     font-family: 'Amatic SC', sans-serif;
     letter-spacing: 17.5px;
   }
+
+    .char1 {
+      font-size: 300px;
+  }
   
   .hero-one {
     top: 0;
@@ -372,6 +376,10 @@ video#bgvideo {
   @media only screen and (max-width: 600px) {
     .hero  {
       letter-spacing: 0px;
+    }
+
+    .char1 {
+        font-size: 43px;
     }
 
     .os-phrases h2,
