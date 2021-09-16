@@ -113,7 +113,7 @@ nav {
 a {
     color: white;
     text-decoration: none;
-    z-index: -1;
+ 
 }
 
 .menu, .submenu {
@@ -288,7 +288,7 @@ a {
 }
 
 /* Background video */
-video#bgvideo {
+/* video#bgvideo {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -308,70 +308,9 @@ video#bgvideo {
         .nav {
           margin-bottom: 100px;
         }
-      }
+      } */
 
-/* Hero Banner */
-.hero {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    color: #CCC;
-    position: relative;
-    text-transform: uppercase;
-    font-family: 'Amatic SC', sans-serif;
-    letter-spacing: 17.5px;
-  }
-
-   
-  
-  .hero-one {
-    top: 0;
-    position: absolute;
-    width: 60%;
-    background-color: black;
-    height: 100vh;
-    clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
-    z-index: 0;
-    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(https://images.pexels.com/photos/3992933/pexels-photo-3992933.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-      background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .hero-two {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%;
-    background-color: green;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(https://consciousreminder.com/wp-content/uploads/2017/06/Frequency-and-Vibration.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .header-title {
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .header-primary {
-    font-size: 2em;
-    display: block;
-    font-weight: 700;
-    display: none;
-  }
-
-  .header-sub {
-      display: none;
-  }
-
-  
-
-  @media only screen and (max-width: 600px) {
+  /* @media only screen and (max-width: 600px) {
     .hero  {
       letter-spacing: 0px;
     }
@@ -394,7 +333,7 @@ video#bgvideo {
     .hero-two {
         display: none;
     }
-  }
+  } */
 
 
 
@@ -439,236 +378,46 @@ a:hover {
 	display: block;
 }
 
-.os-phrases h2 {
-	font-family: 'Dosis', 'Lato', sans-serif;
-	font-size: 70px;
-	font-weight: 200;
-	width: 100%;
-	overflow: hidden;
-	text-transform: uppercase;
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	letter-spacing: 14px;
-	text-align: center;
-	opacity: 0;
+
+/* Trying different text animation */
+
+  p, a {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    
+    font-family: Courier, monospace;
+    font-smoothing: antialiased;
+    margin: 0.8em 0;
+    font-size: 20px;
+    color: #B95;
+  }
+
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
 }
 
-.os-phrases h2,
-.os-phrases h2 > span {
-	height: 100%;
-	/* Centering with flexbox */
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-box-pack: center;
-	-moz-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-moz-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
+.title {
+    font-weight: 800;
+    color: transparent;
+    font-size: 120px;
+    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+    background-position: 40% 50%;
+    -webkit-background-clip: text;
+    position: relative;
+    text-align: center;
+    line-height: 90px;
+    letter-spacing: -8px;
+  }
+  .subtitle {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+  }
 
-.os-phrases h2 > span {
-	margin: 0 15px;
-}
 
-.os-phrases h2 > span > span {
-	display: inline-block;
-	-webkit-perspective: 1000px;
-	-moz-perspective: 1000px;
-	perspective: 1000px;
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
-}
 
-.os-phrases h2 > span > span > span {
-	display: inline-block;
-	color: hsla(0,0%,0%,0);
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-	-webkit-animation: OpeningSequence 5.2s linear forwards;
-	-moz-animation: OpeningSequence 5.2s linear forwards;
-	animation: OpeningSequence 5.2s linear forwards;
-}
-
-.os-phrases h2:nth-child(2) > span > span > span {
-	-webkit-animation-delay: 5s;
-	-moz-animation-delay: 5s;
-	animation-delay: 5s;
-}
-
-.os-phrases h2:nth-child(3) > span > span > span {
-	-webkit-animation-delay: 10s;
-	-moz-animation-delay: 10s;
-	animation-delay: 10s;
-}
-
-.os-phrases h2:nth-child(4) > span > span > span {
-	-webkit-animation-delay: 15s;
-	-moz-animation-delay: 15s;
-	animation-delay: 15s;
-}
-
-.os-phrases h2:nth-child(5) > span > span > span {
-	font-size: 150px;
-	-webkit-animation-delay: 21s;
-	-moz-animation-delay: 21s;
-	animation-delay: 21s;
-	-webkit-animation-duration: 8s;
-	-moz-animation-duration: 8s;
-	animation-duration: 8s;
-}
-
-.os-phrases h2:nth-child(6) > span > span > span {
-	-webkit-animation-delay: 30s;
-	-moz-animation-delay: 30s;
-	animation-delay: 30s;
-}
-
-.os-phrases h2:nth-child(7) > span > span > span {
-	-webkit-animation-delay: 34s;
-	-moz-animation-delay: 34s;
-	animation-delay: 34s;
-}
-
-@-webkit-keyframes OpeningSequence {
-	0% {
-		text-shadow: 0 0 50px #fff;
-		letter-spacing: 80px;
-		opacity: 0;
-		-webkit-transform: rotateY(-90deg);
-	}
-	50% {
-		text-shadow: 0 0 1px #fff;
-		letter-spacing: 14px;
-		opacity: 0.8;
-		-webkit-transform: rotateY(0deg);
-	}
-	85% {
-		text-shadow: 0 0 1px #fff;
-		opacity: 0.8;
-		-webkit-transform: rotateY(0deg) translateZ(100px);
-	}
-	100% {
-		text-shadow: 0 0 10px #fff;
-		opacity: 0;
-		-webkit-transform: translateZ(130px);
-		pointer-events: none;
-	}
-}
-
-@-moz-keyframes OpeningSequence {
-	0% {
-		text-shadow: 0 0 50px #fff;
-		letter-spacing: 80px;
-		opacity: 0.2;
-		-moz-transform: rotateY(-90deg);
-	}
-	50% {
-		text-shadow: 0 0 1px #fff;
-		letter-spacing: 14px;
-		opacity: 0.8;
-		-moz-transform: rotateY(0deg);
-	}
-	85% {
-		text-shadow: 0 0 1px #fff;
-		opacity: 0.8;
-		-moz-transform: rotateY(0deg) translateZ(100px);
-	}
-	100% {
-		text-shadow: 0 0 10px #fff;
-		opacity: 0;
-		-moz-transform: translateZ(130px);
-		pointer-events: none;
-	}
-}
-
-@keyframes OpeningSequence {
-	0% {
-		text-shadow: 0 0 50px #fff;
-		letter-spacing: 80px;
-		opacity: 0.2;
-		transform: rotateY(-90deg);
-	}
-	50% {
-		text-shadow: 0 0 1px #fff;
-		letter-spacing: 14px;
-		opacity: 0.8;
-		transform: rotateY(0deg);
-	}
-	85% {
-		text-shadow: 0 0 1px #fff;
-		opacity: 0.8;
-		transform: rotateY(0deg) translateZ(100px);
-	}
-	100% {
-		text-shadow: 0 0 10px #fff;
-		opacity: 0;
-		transform: translateZ(130px);
-		pointer-events: none;
-	}
-}
-
-.os-phrases h2:nth-child(8) > span > span > span {
-	font-size: 30px;
-	-webkit-animation: FadeIn 4s linear 40s forwards;
-	-moz-animation: FadeIn 4s linear 40s forwards;
-	animation: FadeIn 4s linear 40s forwards;
-}
-
-@-webkit-keyframes FadeIn { 
-	0% {
-		opacity: 0;
-		text-shadow: 0 0 50px #fff;
-	}
-	100% {
-		opacity: 0.8;
-		text-shadow: 0 0 1px #fff;
-	}
-}
-
-@-moz-keyframes FadeIn { 
-	0% {
-		opacity: 0;
-		text-shadow: 0 0 50px #fff;
-	}
-	100% {
-		opacity: 0.8;
-		text-shadow: 0 0 1px #fff;
-	}
-}
-
-@keyframes FadeIn { 
-	0% {
-		opacity: 0;
-		text-shadow: 0 0 50px #fff;
-	}
-	100% {
-		opacity: 0.8;
-		text-shadow: 0 0 1px #fff;
-	}
-}
-
-/* Bold words */
-.os-phrases h2:first-child .word3,
-.os-phrases h2:nth-child(2) .word2,
-.os-phrases h2:nth-child(4) .word2 {
-	font-weight: 600;
-}
