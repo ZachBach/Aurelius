@@ -286,6 +286,9 @@ a {
     .submenu-active {
         border-radius: 0;
     }
+    a {
+        font-size: 20px;
+    }
 }
 
 
@@ -574,7 +577,6 @@ a:hover {
         font-family: Courier, monospace;
         font-smoothing: antialiased;
         margin: 0.8em 0;
-        font-size: 20px;
         color: #B95;
       }
 
@@ -600,4 +602,13 @@ a:hover {
     h2  {
         color: white;
     }
-    
+
+    form a {
+        font-size: 12px;
+    }
+
+    @media all and (min-width: 960px) {
+        body {
+            font-size: 12px;
+        }
+    }
