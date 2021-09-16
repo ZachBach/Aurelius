@@ -60,3 +60,5 @@ function closeSubmenu(e) {
       el: ".swiper-pagination",
     },
   });
+
+  $('img').innerHTML("Hello")
