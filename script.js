@@ -61,4 +61,5 @@ function closeSubmenu(e) {
     },
   });
 
-  $('img').innerHTML("Hello")
+  
+  

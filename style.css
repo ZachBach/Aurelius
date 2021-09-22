@@ -606,9 +606,3 @@ a:hover {
     form a {
         font-size: 12px;
     }
-
-    @media all and (min-width: 960px) {
-        body {
-            font-size: 12px;
-        }
-    }
