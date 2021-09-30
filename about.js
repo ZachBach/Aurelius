@@ -1,12 +1,15 @@
-// Fullscreen Pageflip
-var flipbookEL = document.getElementById('flipbook');
-
-window.addEventListener('resize', function (e) {
-  flipbookEL.style.width = '';
-  flipbookEL.style.height = '';
-  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
+$(".book").mouseenter(function(){
+  $(this).parent(".book-wrap").addClass("rotate");
 });
 
-$(flipbookEL).turn({
-    autoCenter: true
+$(".book").mouseleave(function(){
+  $(this).parent(".book-wrap").removeClass("rotate");
+});
+
+$(".book").click(function(){
+  $(this).parent(".book-wrap").addClass("flip");
+});
+
+$(".book-back").click(function(){
+  $(this).parent(".book-wrap").removeClass("flip");
 });
